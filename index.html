@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>HTML Template</title>
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="css/normalize/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+	<div class="super_container">
+
+		<div class="company_logo">
+				
+			<img src="http://www.englerwindow.com/wp-content/uploads/2017/01/Tecnoglass-Logo.jpg" alt="">
+
+		</div>
+
+		<form class="employee" action="index.html" method="post">
+				
+			<h1 class="form_heading">Employee 90-Day Evaluation</h1>
+
+			<fieldset class="basic_info_fieldset">
+
+				<div class="name_container">
+
+					<legend class="basic_info_legend">1. Basic Info:</legend>
+
+					<label class="name_label">Employee Name:</label>
+
+					<label class="firstName_label" for="first_name">First Name</label>
+					<input type="text" id="first_name" name="user_name" required>
+					<label class="lastName_label" for="last_name">Last Name</label>
+					<input type="text" id="last_name" name="user_name" required>
+
+				</div>
+
+				<div class="department_container">
+					
+					<label for="department" class="department_label">Job:</label>
+					<select name="user_department" id="department">
+						<optgroup label="Web Developement">
+							<option value="php_developer">PHP Developer</option>
+							<option value="ruby_developer">Ruby Developer</option>
+							<option value="python_developer">Python Developer</option>
+						</optgroup>
+						<optgroup label="Mobile">
+							<option value="ios_developer">iOS Developer</option>
+							<option value="android_developer">Android Developer</option>
+							<option value="xiaomi_developer">Xiaomi Developer</option>
+						</optgroup>
+						<optgroup label="Business">
+							<option value="business_owner">Business Owner</option>
+							<option value="freelancer">Freelancer</option>
+						</optgroup>
+					</select>
+
+				</div>
+
+				<div class="name_container">
+
+					<label class="name_label">Supervisor Name:</label>
+
+					<label class="firstName_label" for="super_first_name">First Name</label>
+					<input type="text" id="super_first_name" name="super_user_name" required="">
+					<label class="lastName_label" for="super_last_name">Last Name</label>
+					<input type="text" id="super_last_name" name="super_user_name" required="">
+
+				</div>
+
+				<div class="date_container">
+
+					<div class="date_container_start">
+						
+						<label class="date_label" for="start_day">Employee Start Date</label>
+
+						<select name="user_day_start" id="start_day">
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+							<option value="6">6</option>
+							<option value="7">7</option>
+							<option value="8">8</option>
+							<option value="9">9</option>
+							<option value="10">10</option>
+							<option value="11">11</option>
+							<option value="12">12</option>
+							<option value="13">13</option>
+							<option value="14">14</option>
+							<option value="15">15</option>
+							<option value="16">16</option>
+							<option value="17">17</option>
+							<option value="18">18</option>
+							<option value="19">19</option>
+							<option value="20">20</option>
+							<option value="21">21</option>
+							<option value="22">22</option>
+							<option value="23">23</option>
+							<option value="24">24</option>
+							<option value="25">25</option>
+							<option value="26">26</option>
+							<option value="27">27</option>
+							<option value="28">28</option>
+							<option value="29">29</option>
+							<option value="30">30</option>
+							<option value="31">31</option>
+						</select>
+
+						<select name="user_month_start" id="start_month">
+							<option value="january">January</option>
+							<option value="february">February</option>
+							<option value="march">March</option>
+							<option value="april">April</option>
+							<option value="may">May</option>
+							<option value="june">June</option>
+							<option value="july">July</option>
+							<option value="august">August</option>
+							<option value="september">September</option>
+							<option value="august">August</option>
+							<option value="november">November</option>
+							<option value="december">December</option>
+						</select>
+
+						<select name="user_year_start" id="start_year">
+							<option value="2000">2000</option>
+							<option value="2001">2001</option>
+							<option value="2002">2002</option>
+							<option value="2003">2003</option>
+							<option value="2004">2004</option>
+							<option value="2005">2005</option>
+							<option value="2006">2006</option>
+							<option value="2007">2007</option>
+							<option value="2008">2008</option>
+							<option value="2009">2009</option>
+							<option value="2010">2010</option>
+						</select>
+
+					</div>
+
+					<div class="date_container_eval">
+
+						<label class="date_label" for="eval_day">Employee Evaluation Date</label>
+
+						<select name="user_day_eval" id="eval_day">
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+							<option value="6">6</option>
+							<option value="7">7</option>
+							<option value="8">8</option>
+							<option value="9">9</option>
+							<option value="10">10</option>
+							<option value="11">11</option>
+							<option value="12">12</option>
+							<option value="13">13</option>
+							<option value="14">14</option>
+							<option value="15">15</option>
+							<option value="16">16</option>
+							<option value="17">17</option>
+							<option value="18">18</option>
+							<option value="19">19</option>
+							<option value="20">20</option>
+							<option value="21">21</option>
+							<option value="22">22</option>
+							<option value="23">23</option>
+							<option value="24">24</option>
+							<option value="25">25</option>
+							<option value="26">26</option>
+							<option value="27">27</option>
+							<option value="28">28</option>
+							<option value="29">29</option>
+							<option value="30">30</option>
+							<option value="31">31</option>
+						</select>
+
+						<select name="user_month_eval" id="eval_month">
+							<option value="january">January</option>
+							<option value="february">February</option>
+							<option value="march">March</option>
+							<option value="april">April</option>
+							<option value="may">May</option>
+							<option value="june">June</option>
+							<option value="july">July</option>
+							<option value="august">August</option>
+							<option value="september">September</option>
+							<option value="august">August</option>
+							<option value="november">November</option>
+							<option value="december">December</option>
+						</select>
+
+						<select name="user_year_eval" id="eval_year">
+							<option value="2000">2000</option>
+							<option value="2001">2001</option>
+							<option value="2002">2002</option>
+							<option value="2003">2003</option>
+							<option value="2004">2004</option>
+							<option value="2005">2005</option>
+							<option value="2006">2006</option>
+							<option value="2007">2007</option>
+							<option value="2008">2008</option>
+							<option value="2009">2009</option>
+							<option value="2010">2010</option>
+						</select>
+
+					</div>
+
+				</div>
+
+			</fieldset>
+
+			<fieldset class="rating_employee_fieldset">
+
+				<div class="evaluation_container">
+
+					<legend class="rating_employee_legend">2. Rating the Employee</legend>
+
+					<label class="rating_employee_label">Please rate the employee in the following areas on a scale of 1 to 5. 5 meaning always exceeds expectations and 1 meaning never meets expectations.</label>
+
+					<table class="rating_table">
+
+						<tr>
+							<td id="unique_td">&nbsp;</td>
+							<td>1</td>
+							<td>2</td>
+							<td>3</td>
+							<td>4</td>
+							<td>5</td>
+						</tr>
+						<tr>
+							<th>Employee submits high quality work.</td>
+							<td><input type="radio" id="hqw1" value="hqw1" name="user_hqw" required></td>
+							<td><input type="radio" id="hqw2" value="hqw2" name="user_hqw"></td>
+							<td><input type="radio" id="hqw3" value="hqw3" name="user_hqw"></td>
+							<td><input type="radio" id="hqw4" value="hqw4" name="user_hqw"></td>
+							<td><input type="radio" id="hqw5" value="hqw5" name="user_hqw"></td>
+						</tr>
+						<tr>
+							<th>Employee delivers work on time and meets deadlines.</td>
+							<td><input type="radio" id="dwot1" value="dwot1" name="user_dwot" required></td>
+							<td><input type="radio" id="dwot2" value="dwot2" name="user_dwot"></td>
+							<td><input type="radio" id="dwot3" value="dwot3" name="user_dwot"></td>
+							<td><input type="radio" id="dwot4" value="dwot4" name="user_dwot"></td>
+							<td><input type="radio" id="dwot5" value="dwot5" name="user_dwot"></td>
+						</tr>
+						<tr>
+							<th>Employee arrives to work on time.</td>
+							<td><input type="radio" id="awt1" value="awt1" name="user_awt" required></td>
+							<td><input type="radio" id="awt2" value="awt2" name="user_awt"></td>
+							<td><input type="radio" id="awt3" value="awt3" name="user_awt"></td>
+							<td><input type="radio" id="awt4" value="awt4" name="user_awt"></td>
+							<td><input type="radio" id="awt5" value="awt5" name="user_awt"></td>
+						</tr>
+						<tr>
+							<th>Employee conduct him/herself in a professional manner.</td>
+							<td><input type="radio" id="cpm1" value="cpm1" name="user_cpm" required></td>
+							<td><input type="radio" id="cpm2" value="cpm2" name="user_cpm"></td>
+							<td><input type="radio" id="cpm3" value="cpm3" name="user_cpm"></td>
+							<td><input type="radio" id="cpm4" value="cpm4" name="user_cpm"></td>
+							<td><input type="radio" id="cpm5" value="cpm5" name="user_cpm"></td>
+						</tr>
+						<tr>
+							<th>Employee takes initiative when working.</td>
+							<td><input type="radio" id="tiw1" value="tiw1" name="user_tiw" required></td>
+							<td><input type="radio" id="tiw2" value="tiw2" name="user_tiw"></td>
+							<td><input type="radio" id="tiw3" value="tiw3" name="user_tiw"></td>
+							<td><input type="radio" id="tiw4" value="tiw4" name="user_tiw"></td>
+							<td><input type="radio" id="tiw5" value="tiw5" name="user_tiw"></td>
+						</tr>
+						<tr>
+							<th>Employee has a positive attitude at work.</td>
+							<td><input type="radio" id="paw1" value="paw1" name="user_paw" required></td>
+							<td><input type="radio" id="paw2" value="paw2" name="user_paw"></td>
+							<td><input type="radio" id="paw3" value="paw3" name="user_paw"></td>
+							<td><input type="radio" id="paw4" value="paw4" name="user_paw"></td>
+							<td><input type="radio" id="paw5" value="paw5" name="user_paw"></td>
+						</tr>
+						<tr>
+							<th>Employee perform well in high pressure situations.</td>
+							<td><input type="radio" id="pwhp1" value="pwhp1" name="user_pwhp" required></td>
+							<td><input type="radio" id="pwhp2" value="pwhp2" name="user_pwhp"></td>
+							<td><input type="radio" id="pwhp3" value="pwhp3" name="user_pwhp"></td>
+							<td><input type="radio" id="pwhp4" value="pwhp4" name="user_pwhp"></td>
+							<td><input type="radio" id="pwhp5" value="pwhp5" name="user_pwhp"></td>
+						</tr>
+						<tr>
+							<th>Employee seeks out opportunities for growth.</td>
+							<td><input type="radio" id="sofw1" value="sofw1" name="user_sofw" required></td>
+							<td><input type="radio" id="sofw2" value="sofw2" name="user_sofw"></td>
+							<td><input type="radio" id="sofw3" value="sofw3" name="user_sofw"></td>
+							<td><input type="radio" id="sofw4" value="sofw4" name="user_sofw"></td>
+							<td><input type="radio" id="sofw5" value="sofw5" name="user_sofw"></td>
+						</tr>
+						<tr>
+							<th>Employee gets along with coworkers.</td>
+							<td><input type="radio" id="gawc1" value="gawc1" name="user_gawc" required></td>
+							<td><input type="radio" id="gawc2" value="gawc2" name="user_gawc"></td>
+							<td><input type="radio" id="gawc3" value="gawc3" name="user_gawc"></td>
+							<td><input type="radio" id="gawc4" value="gawc4" name="user_gawc"></td>
+							<td><input type="radio" id="gawc5" value="gawc5" name="user_gawc"></td>
+						</tr>
+						<tr>
+							<th>Employee clearly communicates with others.</td>
+							<td><input type="radio" id="ccwo1" value="ccwo1" name="user_ccwo" required></td>
+							<td><input type="radio" id="ccwo2" value="ccwo2" name="user_ccwo"></td>
+							<td><input type="radio" id="ccwo3" value="ccwo3" name="user_ccwo"></td>
+							<td><input type="radio" id="ccwo4" value="ccwo4" name="user_ccwo"></td>
+							<td><input type="radio" id="ccwo5" value="ccwo5" name="user_ccwo"></td>
+						</tr>
+
+					</table>
+
+					<label class="add_comments_label" for="add_comments">Additional Comments</label>
+
+					<textarea id="add_comments" name="add_comments"> </textarea>
+
+					<div class="check_consentment">
+
+						<input type="checkbox" id="truth_consentment" value="true" name="user_truth_consentment" required><label class="truth_consentment_label" for="truth_consentment">The evaluation I have conducted is truthful and correct to the best of my knowledge.</label>
+
+					</div>
+
+				</div>
+
+			</fieldset>
+
+			<button class="submit_button" type="submit">Submit Form</button>
+
+		</form>
+
+	</div>
+	
+</body>
+</html>

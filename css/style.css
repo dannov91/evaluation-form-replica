@@ -1,0 +1,430 @@
+/* ==============================
+0. BASE STYLING
+===============================*/
+
+/* ==== 0.1 WEB FONTS ==== */
+
+@font-face {
+  font-family: 'Abolition Regular';
+  src: url('fonts/abolition-regular-webfont.eot');
+  src: url('fonts/abolition-regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('fonts/abolition-regular-webfont.woff') format('woff'),
+       url('fonts/abolition-regular-webfont.ttf') format('truetype');
+}
+
+/* ==== 0.2 UNIVERSAL RULES ==== */
+
+* { box-sizing: border-box; }
+
+body {
+
+	font-family: arial, sans-serif;
+	font-size: 1rem;
+
+}
+
+/* ==== 0.3 TAG RULES ==== */
+
+a {
+
+	text-decoration: none;
+	color: initial;
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+
+}
+
+h1 { 
+
+	margin: 0;
+	font-size: 1.2rem;
+ }
+
+h2,
+h3 {
+	
+	margin: 0;
+	font-weight: normal;
+
+}
+
+fieldset {
+
+	padding: 0;
+	border: none;
+	margin: 0;
+
+}
+
+th { font-weight: normal; }
+
+/*input:focus { outline: none; }*/
+
+img { display: block; }
+
+p {margin: 0;}
+
+ul {
+
+	list-style: none;
+	padding: 0;
+	margin: 0;
+
+}
+
+/* ==============================
+1. GENERAL STRUCTURE
+===============================*/
+
+.super_container {
+
+	width: 90%;
+	padding: 15px 0;
+	margin: 0 auto;
+	color: rgb(89, 93, 100);
+
+}
+
+.company_logo {
+
+	margin-bottom: 20px;
+
+}
+
+.company_logo img {
+
+	max-width: 100%;
+	margin: 0 auto;
+
+}
+
+.basic_info_fieldset {
+
+	margin-top: 27px;
+
+}
+
+.rating_employee_fieldset {
+
+	margin: 35px 0 50px;
+
+}
+
+/* ==============================
+2. BASIC INFO
+===============================*/
+
+.form_heading {
+
+	font-weight: normal;
+
+}
+
+/* ==== 2.1 USER NAME / SUPERVISOR NAME --> FORM ==== */
+
+.name_container {
+
+	display: flex;
+	flex-wrap: wrap;
+
+}
+
+/*FLEX DECLARATIONS---------------------------*/
+
+.name_container .basic_info_fieldset,
+.name_container .name_label,
+.name_container .firstName_label,
+.name_container #first_name,
+.name_container .lastName_label,
+.name_container #last_name,
+.name_container #super_first_name,
+.name_container #super_last_name { flex: 100%; }
+
+/*----------------------------------------------*/
+
+/*FLEX CHILDREN ORDER---------------------------*/
+
+
+.name_container .basic_info_legend { order: 1;}
+.name_container .name_label { order: 2;}
+.name_container .firstName_label { order: 4;}
+
+.name_container #first_name,
+.name_container #super_first_name { order: 3;}
+
+.name_container .lastName_label { order: 6;}
+.name_container #last_name,
+
+.name_container #super_last_name { order: 5;}
+
+/*----------------------------------------------*/
+
+.name_container .basic_info_legend { margin-bottom: 35px; }
+.name_container .name_label { margin-bottom: 20px; }
+
+.name_container .firstName_label { 
+
+	font-size: 0.75rem;
+	padding: 12px 0 10px;
+
+}
+
+.name_container .lastName_label {
+
+	font-size: 0.75rem;
+	padding-top: 12px
+
+}
+
+.name_container #first_name,
+.name_container #super_first_name,
+.name_container #last_name,
+.name_container #super_last_name { padding: 10px 5px; }
+
+/* ==== 2.2 DEPARMENT FORM ==== */
+
+.department_container {
+
+	display: flex;
+	flex-wrap: wrap;
+	margin: 27px 0 35px;
+}
+
+.department_container .department_label,
+.department_container #department { flex: 100%; }
+
+.department_container .department_label {
+
+	margin-bottom: 20px;
+
+}
+
+.department_container #department {
+
+	padding: 10px 5px;
+
+}
+
+/* ==== 2.3 DATES FORM ==== */
+
+.date_container { margin-top: 18px; }
+
+.date_container div[class*=date_container_] {
+
+	display: flex;
+	flex-wrap: wrap;
+
+}
+
+.date_container div[class*=date_container_] .date_label {
+
+	flex: 100%;
+
+}
+
+.date_container .date_container_start {
+
+	margin-bottom: 30px;
+
+}
+
+.date_container div[class*=date_container_] .date_label {
+
+	margin: 10px 0;
+
+}
+
+.date_container div[class*=date_container_] select[name*=user_] {
+
+	margin-right: 10px;
+	padding: 10px 5px;
+
+}
+
+/* ==============================
+3. EVALUATION OF EMPLOYEE
+===============================*/
+
+.rating_employee_legend {
+
+	margin-bottom: 35px;
+
+}
+
+.evaluation_container {
+
+	display: flex;
+	flex-direction: column;
+
+}
+
+/* ==== 3.1 GRID EVALUATION ==== */
+
+
+.evaluation_container .rating_employee_label {
+
+	margin-bottom: 20px;
+
+}
+
+.evaluation_container .rating_table {
+
+	border-collapse: collapse;
+
+}
+
+.rating_table td, .rating_table th { border: 1px solid rgb(207, 212, 216); }
+
+.evaluation_container .rating_table tr th,
+.evaluation_container .rating_table tr td {
+
+	font-size: 0.75rem;
+	text-align: center;
+	padding: 5px;
+
+}
+
+.evaluation_container .rating_table tr td:first-child { width: 40%; }
+
+.evaluation_container .rating_table tr:nth-child(even) {
+
+	background: rgb(241, 241, 241);
+
+}
+
+.evaluation_container .rating_table tr td:nth-child(odd) {
+
+	background: rgba(212, 212, 212, 0.2);
+
+}
+
+.evaluation_container .rating_table tr td:nth-child(even) {
+
+	background: rgba(234, 234, 234, 0.2);
+
+}
+
+#unique_td {
+
+	background: initial;
+	border-top: none;
+	border-left: none;
+
+}
+
+/* ==== 3.2 GRID EVALUATION ==== */
+
+.evaluation_container .add_comments_label {
+
+	margin: 27px 0 12px;
+
+}
+
+.evaluation_container #add_comments {
+
+	height: 154px;
+	padding: 7px;
+	margin-bottom: 20px;
+
+}
+
+.evaluation_container .check_consentment {
+
+	background: rgb(237, 239, 240);
+	border: 1px solid rgb(207, 212, 216);
+	padding: 7px 14px;
+
+}
+
+.evaluation_container .check_consentment #truth_consentment {
+
+	margin-right: 5px;
+
+}
+
+.evaluation_container .check_consentment .truth_consentment_label {
+
+	line-height: 30px;
+	color: black;
+
+}
+
+.submit_button {
+
+	width: 100%;
+	padding: 10px;
+	background-color: rgb(89, 93, 100);
+	color: white;
+	border: none;
+
+}
+
+/* ==============================
+4. MEDIA QUERIES
+===============================*/
+
+/* ==== 4.1 FOR TABLETS AND DESKTOPS ==== */
+
+@media only screen and (min-width: 600px) {
+
+	.employee {
+
+		display: flex;
+		flex-direction: column;
+
+	}
+
+	.super_container {
+
+		max-width: 800px;
+
+	}
+
+	/*FLEX DECLARATIONS---------------------------*/
+
+	.name_container .firstName_label,
+	.name_container #first_name,
+	.name_container .lastName_label,
+	.name_container #last_name,
+	.name_container #super_first_name,
+	.name_container #super_last_name { flex: calc(50% - 10px); }
+
+	/*---------------------------------------------*/
+
+	/*FLEX CHILDREN ORDER---------------------------*/
+
+	.name_container .basic_info_legend { order: 1;}
+	.name_container .name_label { order: 2;}
+	.name_container .firstName_label { order: 5;}
+
+	.name_container #first_name,
+	.name_container #super_first_name { order: 3;}
+
+	.name_container .lastName_label { order: 6;}
+
+	.name_container #last_name,
+	.name_container #super_last_name { order: 4;}
+
+	/*---------------------------------------------*/
+
+	/*GUTTERS FOR NAMES ---------------------------*/
+
+	.name_container #first_name,
+	.name_container #super_first_name,
+	.name_container .firstName_label { margin-right: 10px; }
+
+	.name_container .lastName_label,
+	.name_container #last_name,
+	.name_container #super_last_name { margin-left: 10px; }
+
+	/*---------------------------------------------*/
+
+	.submit_button {
+
+		width: auto;
+		align-self: center;
+
+	}
+
+}
